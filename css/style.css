@@ -1,4 +1,4 @@
-*Обнуление*/
+/*Обнуление*/
 *{
 	padding: 0;
 	margin: 0;
@@ -38,73 +38,67 @@ img{vertical-align: top;}
 h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 
 /*-----------------------------------------------------*/
-@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Lora:ital,wght@0,400;0,500;1,400;1,500&display=swap');
-
-body{}
-
-@media (max-width: 1200px){
-	.container{
-		max-width: 970px;
-	}
+body{
+	background: url('../image/background.jpg') 0 0/cover no-repeat;
 }
-@media (max-width: 992px){
-	.container{
-		max-width: 750px;
-	}
-}
-@media (max-width: 767px){
-	.container{
-		max-width: none;
-	}
-}
-.header{
-	width: 100%;
-	padding: 30px 0px;
-}
-
-.header .container{
-	max-width: 996px;
-	background: #E6E6FA;
+.content{
 	margin: 0px auto;
+	padding: 50px 0px;
 }
-.header__title{
-	margin: 0px auto;
+.window{
+	margin: 0 auto;
+	margin-top: 80px;
+	border: 2px solid #000000;
+	border-radius: 4px;
+	max-width: 840px;
+	min-height: 450px;
+	height: fit-content;
+	background-color: rgba(0,0,0,0.8);
 }
-.header__title h1{
-	font-family: 'Lora', serif;
-	font-size: 50px;
-	font-weight: 500;
-	color: #000000;
-	line-height: 50px;
-	text-align: center;
-	padding: 30px 0px;
-}
-.header__table{
-	max-width: 985px;
-	margin: 0px auto;
-	padding-bottom: 30px;
-	border-radius: 5px;
+.window__header{
 	display: flex;
-	justify-content: center;
+	justify-content: space-between;
+	border-bottom: 2px solid #000000;
+	padding: 10px 18px;
+	background-color: rgba(0,0,0,0.9);
 }
-.header__table__preview{
-	width: 345px;
+.window__header img{
+	width: 32px;
+}
+.window__inner{
 	display: flex;
 	flex-direction: column;
+	margin-top: 55px;
+	padding-left: 40px;
 }
-.header__table__github{
-	width: 345px;
-	display: flex;
-	flex-direction: column;
+.window__inner__text{
+	max-width: 500px;
+	font-family: "ArticaPro-Bold";
+	color: #FFFFFF;
 }
-.header__table a{
-	font-family: 'Lora', serif;
+.window__inner__text h1{
+	font-size: 36px;
+	line-height: 40px;
+	padding-bottom: 20px;
+}
+.window__inner__text h3{
+	font-size: 30px;
+	line-height: 36px;
+}
+.window__inner a:hover{
+	text-decoration: none;
+}
+.window__inner__button{
+	width: 320px;
+	height: 54px;
+	background-color: rgba(0,0,0,0.5);
+	border: 1px solid #FFFFFF;
+	padding: 12px 0px;
+	margin-top: 50px;
+	font-family: "ArticaPro-Medium";
+	text-transform: uppercase;
 	font-size: 24px;
-	line-height: 26px;
-	font-weight: 400;
-	color: #000000;
+	line-height: 28px;
 	text-align: center;
-	border: 0.5px solid #483D8B;
-	background: #FFF0F5;
-	padding: 15px 0px;
+	color: #FFFFFF;
 }
