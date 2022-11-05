@@ -26,10 +26,16 @@
 	}
 }
 
-@media (max-width: 992px) {
+@media (max-width: 992px){
 	.header__head .media_nav{
         display: block;
     }
+    .study .media_max{
+		display: none!important;
+	}
+    .study .media_min{
+		display: flex;
+	}
 	.stock_bg .stock_bg__photo{
 		max-width: 340px;
 		left: -30px;
@@ -88,12 +94,25 @@
 	}
 }
 
-@media (max-width: 768px) {
+@media (max-width: 768px){
+	.study .study__title{
+    	text-align: center!important;
+    }
+    .study .study__text{
+    	text-align: center!important;
+    }
+    .study .media_min{
+		display: flex;
+		flex-direction: column;
+	}
+	.media_min .left{
+		padding-left: 55px;
+	}
 	.stock .container{
 		padding: 0;
 	}
 	.stock_bg .stock_bg__photo{
-		left: -230px;
+		left: 0px;
 	}
 	.stock__content .stock_bg_2{
 		max-width: 420px;
@@ -114,18 +133,21 @@
 	.opinion .bx-wrapper .bx-next{
 	    right: 44%;
 	}
-}
-
-@media (max-width: 730px) {
-	.el_title .el_title__title::after{
-		width: 30%;
+	.question .question_flex{
+		flex-direction: column;
+		align-items: center;
 	}
-	.buy_course__el .el_button a:nth-child(1) {
-	    margin-left: 70px;
+	.question__button button{
+		margin-left: -547px;
 	}
 }
 
-@media (max-width: 638px) {
+@media (max-width: 638px){
+	.header__form .header__form__title{
+		text-align: right;
+		font-size: 40px;
+		line-height: 48px;
+	}
 	.course .course__title::before{
 		display: none;
 	}
@@ -137,6 +159,15 @@
 	}
 	.teacher .teacher__title::after{
 		display: none;
+	}
+	.el_title .el_title__title::after{
+		width: 30%;
+	}
+	.buy_course__el .el_button a:nth-child(1) {
+	    margin-left: 70px;
+	}
+	.opinion .opinion__title{
+		text-align: center;
 	}
 	.opinion .opinion__title::before{
 		display: none;
@@ -151,18 +182,24 @@
 	.opinion .bx-wrapper .bx-next{
 	    right: 42%;
 	}
+	.question__button button{
+		margin-left: -483px;
+	}
 }
 
-@media (max-width: 465px) {
+@media (max-width: 576px){
 	.el_title .el_title__title{
 		font-size: 38px;
 	}
 	.el_title .el_title__title h2{
-	margin-left: -55px;
-}
+		margin-left: -55px;
+	}
+	.question__button button{
+		margin-left: -450px;
+	}
 }
 
-@media (max-width: 360px) {
+@media (max-width: 425px){
 	.header__head .media_nav{
         display: none;
     }
@@ -196,6 +233,22 @@
 	.inner_button svg{
 		margin-right: 24px;
 	}
+	.header__form .header__form__title{
+		text-align: center;
+		padding: 30px 0 15px 0;
+	}
+	.header__form .header__form__inner{
+		margin-left: 16px;
+	}
+	.about .about__title h2{
+		margin-left: 70px;
+	}
+	.about__title .about__title__line{
+		display: none;
+	}
+	.about .about__text{
+		text-align: center;
+	}
 	.study__table__column .col_element{
 		border: none;
 	}
@@ -203,13 +256,17 @@
 	.study__table__column.center{
 		margin-right: 0;
 	}
+	.course .course__text{
+		text-align: center;
+	}
 	.stock_bg .stock_bg__photo{
 		display: none;
 	}
 	.stock_bg .stock_bg__text{
-		max-width: 300px;
+		max-width: 360px;
 		font-size: 12px;
 		line-height: 28px;
+		text-align: center!important;
 	}
 	.stock__content .stock_bg{
 		max-width: 340px;
@@ -230,6 +287,15 @@
 	.opinion .bx-wrapper .bx-next{
 	    right: 38%;
 	}
+	.question .question__title{
+		text-align: center;
+	}
+	.question .question__text{
+		text-align: center;
+	}
+	.question__button button{
+		margin-left: -376px;
+	}
 	.footer__item__left{
 		margin-left: 26px;
 	}
@@ -240,4 +306,15 @@
 	.footer__item__right .contact{
 		margin-bottom: 39px;
 	}
+	.back-to-top{
+	    right: 20px;
+	    bottom: 20px;
+	}
+}
+
+@media screen and (prefers-reduced-motion: no-preference){
+  html,
+  body{
+    scroll-behavior: smooth;
+  }
 }
