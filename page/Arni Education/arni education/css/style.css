@@ -335,8 +335,17 @@ body{
 .teacher__table{
 	padding: 50px 0;
 }
+.teacher__table .bx-wrapper{
+	max-width: 310px!important;
+	border: none!important;
+	box-shadow: none!important;
+	background: transparent!important;
+}
 .teacher__table__column{
 	padding-right: 40px;
+}
+.teacher_slider__slide{
+	margin: 0 auto;
 }
 .col_bg_2{
 	z-index: 3;
